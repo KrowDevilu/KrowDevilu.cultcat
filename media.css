@@ -1,21 +1,22 @@
-@media (max-width:360px) {
+@media (max-width:500px) {
     body{
         padding:0;
-        max-width: 350px;
+        max-width: 500px;
+        height: 150%;
     }
     .box{
         display: grid;
-        grid-template: 20vh 10vh 410vh 10vh/1fr;
+        grid-template: 25vh 10vh 480vh 10vh/1fr;
         grid-template-areas: 
                             "header" 
                             "fMenu" 
                             "section"  
                             "footer";
         grid-gap: 5vh;
-        max-width: 350px;
+        max-width: 450px;
     }
     header{
-        max-width: 350px;
+        max-width: 450px;
         max-height: 100%;
         padding: 2% 0 0 0;
         border-radius: 20px 20px 0px 0px;
@@ -27,10 +28,10 @@
         margin: 0;
     }
     .sobre{
-        max-width:340px;
+        max-width:440px;
     }
     section{
-        grid-template: 35vh 20vh 30vh 20vh 35vh 35vh 40vh 90vh 45vh/1fr;
+        grid-template: 45vh 35vh 35vh 35vh 45vh 45vh 45vh 90vh 45vh/1fr;
     grid-template-areas: 
                         "sobre" 
                         "img_sobre" 
@@ -42,25 +43,25 @@
                         "faq"
                         "comentarios";
        text-align: center;
-        max-width: 350px;
+        max-width: 450px;
     }
     a{
         font-size: 14px;
     }
     .faq{
-        max-width: 340px;
+        max-width: 440px;
         text-align: left;
     }
     .autor{
-        max-width: 340px;
+        max-width: 440px;
     }
     .comentarios{
-        max-width: 340px;
+        max-width: 440px;
         text-align: left;
     }
     .floating_menu{
         grid-area: fMenu;
-        max-width: 350px;
+        max-width: 450px;
         max-height: 80px;
         padding: 0 0px;
         border-radius: 0px 0px 20px 20px;
@@ -69,9 +70,10 @@
     }
     .floating_menu hr{
         height: 10px;
+        visibility: hidden;
     }
     .menuBox{
-        max-width: 350px;
+        max-width: 450px;
         margin: 0px 0px;
         display: grid;
         grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -85,10 +87,10 @@
         left: 0%;
     }
     footer{
-        max-width: 350px;
+        max-width: 450px;
         padding: 0px 2%;
     }
     .print1, .print2{
-     width: 280px;
+     width: 380px;
     }
 }
