@@ -1,55 +1,94 @@
-@media (max-width:768px) {
+@media (max-width:360px) {
     body{
         padding:0;
+        max-width: 350px;
     }
     .box{
         display: grid;
-        grid-template: 40vh 20vh 50vh 405vh 5vh 10vh/1fr;
-        grid-template-areas: "header" "fMenu" "section" "section" "none" "footer";
+        grid-template: 20vh 10vh 410vh 10vh/1fr;
+        grid-template-areas: 
+                            "header" 
+                            "fMenu" 
+                            "section"  
+                            "footer";
         grid-gap: 5vh;
+        max-width: 350px;
     }
     header{
+        max-width: 350px;
         max-height: 100%;
         padding: 2% 0 0 0;
         border-radius: 20px 20px 0px 0px;
         
     }
+    .img_sobre, .img_gameplay, .img_autor{
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+    }
+    .sobre{
+        max-width:340px;
+    }
     section{
-        display:block;
+        grid-template: 35vh 20vh 30vh 20vh 35vh 35vh 40vh 90vh 45vh/1fr;
+    grid-template-areas: 
+                        "sobre" 
+                        "img_sobre" 
+                        "gameplay" 
+                        "img_gameplay" 
+                        "autor" 
+                        "img_autor"
+                        "recomenda"
+                        "faq"
+                        "comentarios";
        text-align: center;
-        padding: 5% 2%;
-        max-height: 100%;
-        height: 100%;
+        max-width: 350px;
+    }
+    a{
+        font-size: 14px;
     }
     .faq{
+        max-width: 340px;
         text-align: left;
     }
     .autor{
-        width: 100%;
+        max-width: 340px;
     }
     .comentarios{
+        max-width: 340px;
         text-align: left;
     }
     .floating_menu{
         grid-area: fMenu;
-        max-width: 100%;
-        max-height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        max-width: 350px;
+        max-height: 80px;
         padding: 0 0px;
         border-radius: 0px 0px 20px 20px;
         background-color: rgba(35, 17, 36, 0.952);
+        
     }
     .floating_menu hr{
-        height: 100%;
-        max-height: 80%;
+        height: 10px;
     }
-    .floating_menu div{
-        margin: 0px 20px;
-        text-align: center;
+    .menuBox{
+        max-width: 350px;
+        margin: 0px 0px;
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-justify: center;
+        padding: 0px 0px;
+        margin: 5px;
+    }
+    .menuBox a{
+        left: 0%;
     }
     footer{
+        max-width: 350px;
         padding: 0px 2%;
+    }
+    .print1, .print2{
+     width: 280px;
     }
 }
