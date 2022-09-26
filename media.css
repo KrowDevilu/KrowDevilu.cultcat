@@ -1,26 +1,25 @@
-@media (max-width:500px) {
-    body{
+@media (max-width:720px) {
+     body{
         padding:0;
-        max-width: 500px;
-        height: 150%;
+        max-width: 720px;
     }
     .box{
         display: grid;
-        grid-template: 25vh 10vh 480vh 10vh/1fr;
+        grid-template: 15vh 10vh 445vh 8vh/1fr;
         grid-template-areas: 
                             "header" 
                             "fMenu" 
                             "section"  
                             "footer";
-        grid-gap: 5vh;
-        max-width: 450px;
+        grid-gap: 2vh;
+        max-width: 630px;
     }
     header{
-        max-width: 450px;
+        max-width: 630px;
         max-height: 100%;
         padding: 2% 0 0 0;
         border-radius: 20px 20px 0px 0px;
-        
+        font-size: 100px;
     }
     .img_sobre, .img_gameplay, .img_autor{
         justify-self: center;
@@ -28,10 +27,13 @@
         margin: 0;
     }
     .sobre{
-        max-width:440px;
+        max-width:620px;
+    }
+    .img_spriteSobre{
+        width:128px;
     }
     section{
-        grid-template: 45vh 35vh 35vh 35vh 45vh 45vh 45vh 90vh 45vh/1fr;
+        grid-template: 35vh 20vh 35vh 20vh 35vh 45vh 30vh 110vh 45vh/1fr;
     grid-template-areas: 
                         "sobre" 
                         "img_sobre" 
@@ -43,26 +45,38 @@
                         "faq"
                         "comentarios";
        text-align: center;
-        max-width: 450px;
+        max-width: 630px;
     }
-    a{
-        font-size: 14px;
+    section p {
+        font-size: 35px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .recomenda p{
+        font-size: 50px;
+    }
+    figcaption{
+        font-size: 25px;
     }
     .faq{
-        max-width: 440px;
+        max-width: 620px;
         text-align: left;
     }
     .autor{
-        max-width: 440px;
+        max-width: 620px;
     }
     .comentarios{
-        max-width: 440px;
+        max-width: 620px;
         text-align: left;
     }
     .floating_menu{
         grid-area: fMenu;
-        max-width: 450px;
-        max-height: 80px;
+        max-width: 630px;
+        max-height: 100%;
         padding: 0 0px;
         border-radius: 0px 0px 20px 20px;
         background-color: rgba(35, 17, 36, 0.952);
@@ -72,25 +86,35 @@
         height: 10px;
         visibility: hidden;
     }
+    a{
+        font-size: 35px;
+    }
     .menuBox{
-        max-width: 450px;
+        max-width: 630px;
         margin: 0px 0px;
         display: grid;
         grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
         justify-content: center;
         align-items: center;
         text-justify: center;
         padding: 0px 0px;
-        margin: 5px;
+        margin: 25px 15px;
     }
     .menuBox a{
         left: 0%;
     }
     footer{
-        max-width: 450px;
+        max-width: 630px;
         padding: 0px 2%;
     }
-    .print1, .print2{
-     width: 380px;
+    footer p {
+        font-size: 40px;
+    }
+    footer img{
+        width: 64px;
+    }
+    .print1, .print2,.img_autorReal{
+     width: 580px;
     }
 }
