@@ -5,7 +5,7 @@
     }
     .box{
         display: grid;
-        grid-template: 250px 150px 7000px 110px/1fr;
+        grid-template: 400px 150px 7000px 110px/1fr;
         grid-template-areas: 
                             "header" 
                             "fMenu" 
@@ -20,6 +20,9 @@
         padding: 2% 0 0 0;
         border-radius: 20px 20px 0px 0px;
         font-size: 100px;
+    }
+    .img_logo{
+        max-width: 256px;
     }
     .img_sobre, .img_gameplay, .img_autor{
         justify-self: center;
@@ -94,12 +97,12 @@
         margin: 0px 0px;
         display: grid;
         grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: 20px 10px;
         justify-content: center;
         align-items: center;
         text-justify: center;
         padding: 0px 0px;
-        margin: 25px 40px;
+        margin: 25px 50px;
     }
     .menuBox a{
         left: 0%;
