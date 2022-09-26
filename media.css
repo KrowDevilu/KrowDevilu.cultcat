@@ -5,13 +5,13 @@
     }
     .box{
         display: grid;
-        grid-template: 15vh 10vh 445vh 8vh/1fr;
+        grid-template: 250px 150px 6600px 110px/1fr;
         grid-template-areas: 
                             "header" 
                             "fMenu" 
                             "section"  
                             "footer";
-        grid-gap: 2vh;
+        grid-gap: 40px;
         max-width: 630px;
     }
     header{
@@ -33,7 +33,7 @@
         width:128px;
     }
     section{
-        grid-template: 35vh 20vh 35vh 20vh 35vh 45vh 30vh 110vh 45vh/1fr;
+        grid-template: 550px 320px 510px 320px 510px 650px 380px 1600px 600px/1fr;
     grid-template-areas: 
                         "sobre" 
                         "img_sobre" 
