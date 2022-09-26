@@ -5,7 +5,7 @@
     }
     .box{
         display: grid;
-        grid-template: 250px 150px 6600px 110px/1fr;
+        grid-template: 250px 150px 7000px 110px/1fr;
         grid-template-areas: 
                             "header" 
                             "fMenu" 
@@ -33,7 +33,7 @@
         width:128px;
     }
     section{
-        grid-template: 550px 320px 510px 320px 510px 650px 380px 1600px 600px/1fr;
+        grid-template: 600px 370px 560px 380px 600px 650px 430px 1800px 600px/1fr;
     grid-template-areas: 
                         "sobre" 
                         "img_sobre" 
@@ -87,7 +87,7 @@
         visibility: hidden;
     }
     a{
-        font-size: 35px;
+        font-size: 30px;
     }
     .menuBox{
         max-width: 630px;
@@ -99,7 +99,7 @@
         align-items: center;
         text-justify: center;
         padding: 0px 0px;
-        margin: 25px 15px;
+        margin: 25px 40px;
     }
     .menuBox a{
         left: 0%;
